@@ -1,0 +1,76 @@
+/* Add general styling to the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #005f73; /* Deep teal */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #94d2bd; /* Light teal */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+/* Styling for the list items */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+ul li {
+    text-align: center;
+}
+
+ul li .metric-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul li .circle {
+    background-color: #6c7b8b;
+    color: white;
+    width: 120px;  /* Increased width */
+    height: 120px;  /* Increased height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 28px;  /* Increased font size */
+    font-weight: bold;
+}
+
+/* Optional: Hover effect for the circle */
+ul li .circle:hover {
+    background-color: #4a5c6e;
+    cursor: pointer;
+}

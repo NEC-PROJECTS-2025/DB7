@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/predictions.css">
+    <title>CKD Prediction</title>
+</head>
+<body>
+    <nav>
+        <a href='/'>Home</a> |
+        <a href='/about'>About Project</a> |
+        <a href='/evaluation'>Model Evaluation Metrics</a> |
+        <a href='/flowchart'>Project Flowchart</a>
+    </nav>
+    <div class="container">
+        <h1>Chronic Kidney Disease Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" step="any"  ><br>
+            
+            <label for="bp">Blood Pressure:</label>
+            <input type="number" id="bp" name="bp" ><br>
+            
+            <label for="sg">Specific Gravity:</label>
+            <input type="number" id="sg" name="sg" ><br>
+            
+            <label for="al">Albumin:</label>
+            <input type="number" id="al" name="al" ><br>
+            
+            <label for="su">Sugar:</label>
+            <input type="number" id="su" name="su" ><br>
+            
+            <button type="submit">Predict</button>
+        </form>
+        
+    </div>
+</body>
+</html>
